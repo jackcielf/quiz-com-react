@@ -41,6 +41,7 @@ const quizReducer = (state, action) => {
                 ...state,
                 currentQuestion: nextQuestion,
                 gameStage: endGame ? STAGES[2] : state.gameStage,
+                answerSelected: false,
             }
         
         case "NEW_GAME":
@@ -58,7 +59,7 @@ const quizReducer = (state, action) => {
             return {
                 ...state,
                 score: state.score + correctAnswer,
-                answerSeleted: option,
+                answerSelected: option,
             }
 
         

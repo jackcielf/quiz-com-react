@@ -5,7 +5,7 @@ import Welcome from './components/Welcome';
 import Question from './components/Question';
 import GameOver from './components/GameOver';
 
-import './App.css';
+import './_assets/css/App.css';
 
 export default function App() {
     const [quizState, dispatch] = useContext(QuizContext);

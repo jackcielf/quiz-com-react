@@ -3,7 +3,7 @@ import { QuizContext } from "../context/quiz";
 
 import Option from "./Option";
 
-import "./Question.css";
+import "../_assets/css/Question.css";
 
 const Question = () => {
   const [quizState, dispatch] = useContext(QuizContext);
@@ -32,7 +32,7 @@ const Question = () => {
           />
         ))}
       </div>
-      {quizState.answerSeleted && (
+      {quizState.answerSelected && (
         <button onClick={() => dispatch({ type: "CHANGE_QUESTION" })}>
           Continuar
         </button>
